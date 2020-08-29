@@ -23,6 +23,7 @@ public class FrontDesk {
         Student student = new Student();
         Library library = new Library();
         library.setBooksInLibrary();
+        String bookName;
         do {
             System.out.println("-=-=--=-=-\"Welcome To The Front Desk\"-=-=--=-=-");
             System.out.println("How may I help you today?");
@@ -45,6 +46,7 @@ public class FrontDesk {
                     library.showAvailableBooks();
                     scanner.nextLine();
                     System.out.println("Enter the details of the books you want to issue: ");
+
                     break;
                 case RETURN_A_PREVIOUSLY_ISSUED_BOOK:
                     break;
