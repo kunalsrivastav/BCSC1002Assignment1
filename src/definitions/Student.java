@@ -11,4 +11,12 @@ public class Student {
     private long universityRollNumberOfTheStudent;
     private int numberOfBooksIssuedByTheStudent;
     private Book[] namesOfTheBooksIssuedByTheStudent;
+
+    // Parameterized Constructor
+    public Student(String nameOfTheStudent, long universityRollNumberOfTheStudent, int numberOfBooksIssuedByTheStudent, Book[] namesOfTheBooksIssuedByTheStudent) {
+        this.nameOfTheStudent = nameOfTheStudent;
+        this.universityRollNumberOfTheStudent = universityRollNumberOfTheStudent;
+        this.numberOfBooksIssuedByTheStudent = numberOfBooksIssuedByTheStudent;
+        this.namesOfTheBooksIssuedByTheStudent = namesOfTheBooksIssuedByTheStudent;
+    }
 }
