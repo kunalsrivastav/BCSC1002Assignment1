@@ -70,8 +70,10 @@ public class FrontDesk {
                     student.showIssuedBooksByStudent();
                     break;
                 case EXIT:
+                    System.out.println("Thanks for using our service.");
                     break;
                 default:
+                    System.out.println("Your have entered wrong choice!");
                     break;
             }
         } while (studentChoice != EXIT);
