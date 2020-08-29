@@ -56,8 +56,7 @@ public class FrontDesk {
                 case RETURN_A_PREVIOUSLY_ISSUED_BOOK:
                     if (student.getNumberOfBooksIssuedByTheStudent() == 0) {
                         System.out.println("Sorry, you haven't issued any book yet so you can't return book.");
-                    }
-                    else {
+                    } else {
                         System.out.println("Enter the name of the book you want to return: ");
                         scanner.nextLine();
                         bookName = scanner.nextLine();

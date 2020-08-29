@@ -9,8 +9,8 @@ package definitions;
 import java.util.Arrays;
 
 public class Library {
-    private Book[] booksThatAreCurrentlyAvailable;
     private static final int MAXIMUM_BOOKS_IN_LIBRARY = 5;
+    private Book[] booksThatAreCurrentlyAvailable;
 
     // Parameterized Constructor
     public Library(Book[] booksThatAreCurrentlyAvailable) {
@@ -53,7 +53,7 @@ public class Library {
 
     /**
      * This method will set the Information of books available in Library.
-     * */
+     */
     public void setBooksInLibrary() {
         booksThatAreCurrentlyAvailable[0].setNameOfTheBook("Engineering Mathematics");
         booksThatAreCurrentlyAvailable[0].setNameOfTheAuthorOfTheBook("H. K. Das");
@@ -74,7 +74,7 @@ public class Library {
 
     /**
      * This method will show the Information of books available in Library.
-     * */
+     */
     public void showAvailableBooks() {
         System.out.println("----------------------------------------------------------------------------------");
         System.out.printf("|%-36s %-21s %-21s|\n", "Book Name", "Author Name", "13-Digit ISBN Number");

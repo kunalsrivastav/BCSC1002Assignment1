@@ -10,11 +10,11 @@ import java.util.Arrays;
 import java.util.Objects;
 
 public class Student {
+    private static final int MAXIMUM_BOOKS_STUDENT_CAN_ISSUE = 5;
     private String nameOfTheStudent;
     private long universityRollNumberOfTheStudent;
     private int numberOfBooksIssuedByTheStudent;
     private Book[] namesOfTheBooksIssuedByTheStudent;
-    private static final int MAXIMUM_BOOKS_STUDENT_CAN_ISSUE = 5;
 
     // Parameterized Constructor
     public Student(String nameOfTheStudent, long universityRollNumberOfTheStudent, int numberOfBooksIssuedByTheStudent, Book[] namesOfTheBooksIssuedByTheStudent) {
@@ -96,9 +96,9 @@ public class Student {
     /**
      * This method will issue the books to the Student
      *
-     * @param bookIssuingIndex  The index where the book is issueing.
-     * @param bookName          The name of the book which is issuing.
-     * */
+     * @param bookIssuingIndex The index where the book is issueing.
+     * @param bookName         The name of the book which is issuing.
+     */
     public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
         namesOfTheBooksIssuedByTheStudent[bookIssuingIndex].setNameOfTheBook(bookName);
     }
@@ -106,9 +106,9 @@ public class Student {
     /**
      * This method will return the Book which the student has issued.
      *
-     * @param bookName  The name of the book which is used to be returned.
-     * @return  It will return Boolean value, if return will be successful then it will return true else false.
-     * */
+     * @param bookName The name of the book which is used to be returned.
+     * @return It will return Boolean value, if return will be successful then it will return true else false.
+     */
     public boolean returnBook(String bookName) {
         boolean returnSuccessful = false;
         int returnBookIndex = 0;
@@ -122,8 +122,7 @@ public class Student {
         }
         if (returnSuccessful) {
             namesOfTheBooksIssuedByTheStudent[returnBookIndex].setNameOfTheBook(null);
-        }
-        else {
+        } else {
             System.out.println("Please Enter the correct book name.");
         }
         return returnSuccessful;
@@ -131,7 +130,7 @@ public class Student {
 
     /**
      * This method will show all the books which is issued by the Student.
-     * */
+     */
     public void showIssuedBooksByStudent() {
         if (getNumberOfBooksIssuedByTheStudent() == 0) {
             System.out.println("Sorry, you haven't issued any book yet.");
