@@ -8,4 +8,9 @@ package definitions;
 
 public class Library {
     private Book[] booksThatAreCurrentlyAvailable;
+
+    // Parameterized Constructor
+    public Library(Book[] booksThatAreCurrentlyAvailable) {
+        this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
+    }
 }
