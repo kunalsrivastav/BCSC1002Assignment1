@@ -33,13 +33,13 @@ public class FrontDesk {
             System.out.println("Enter your choice (1..4): ");
             studentChoice = scanner.nextInt();
             switch (studentChoice) {
-                case 1:
+                case ISSUE_A_NEW_BOOK:
                     break;
-                case 2:
+                case RETURN_A_PREVIOUSLY_ISSUED_BOOK:
                     break;
-                case 3:
+                case SHOW_ALL_ISSUED_BOOKS:
                     break;
-                case 4:
+                case EXIT:
                     break;
                 default:
                     break;
