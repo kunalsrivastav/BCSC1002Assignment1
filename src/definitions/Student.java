@@ -102,4 +102,29 @@ public class Student {
     public void issueBooksToStudents(int bookIssuingIndex, String bookName) {
         namesOfTheBooksIssuedByTheStudent[bookIssuingIndex].setNameOfTheBook(bookName);
     }
+
+    /**
+     * This method will return the Book which the student has issued.
+     *
+     * @param bookName          The name of the book which is used to be returned.
+     * @return returnSuccessful It will return Boolean value, if return will be successful then it will return true else false.
+     * */
+    public boolean returnBook(String bookName) {
+        boolean returnSuccessful = false;
+        int returnBookIndex = 0;
+        for (int tempIndex = 0; tempIndex < MAXIMUM_BOOKS_STUDENT_CAN_ISSUE; tempIndex++) {
+            if (namesOfTheBooksIssuedByTheStudent[tempIndex].getNameOfTheBook().toLowerCase().equals(bookName.toLowerCase())) {
+                returnSuccessful = true;
+                returnBookIndex = tempIndex;
+                break;
+            }
+        }
+        if (returnSuccessful) {
+            namesOfTheBooksIssuedByTheStudent[returnBookIndex].setNameOfTheBook(null);
+        }
+        else {
+            System.out.println("Please Enter the correct book name.");
+        }
+        return returnSuccessful;
+    }
 }
