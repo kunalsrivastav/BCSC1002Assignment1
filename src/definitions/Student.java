@@ -11,6 +11,7 @@ public class Student {
     private long universityRollNumberOfTheStudent;
     private int numberOfBooksIssuedByTheStudent;
     private Book[] namesOfTheBooksIssuedByTheStudent;
+    private static final int MAXIMUM_BOOKS_STUDENT_CAN_ISSUE = 5;
 
     // Parameterized Constructor
     public Student(String nameOfTheStudent, long universityRollNumberOfTheStudent, int numberOfBooksIssuedByTheStudent, Book[] namesOfTheBooksIssuedByTheStudent) {
