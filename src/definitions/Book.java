@@ -10,4 +10,11 @@ public class Book {
     private String nameOfTheBook;
     private String nameOfTheAuthorOfTheBook;
     private String thirteenDigitISBNNumberOfTheBook;
+
+    // Parameterized Constructor
+    public Book(String nameOfTheBook, String nameOfTheAuthorOfTheBook, String thirteenDigitISBNNumberOfTheBook) {
+        this.nameOfTheBook = nameOfTheBook;
+        this.nameOfTheAuthorOfTheBook = nameOfTheAuthorOfTheBook;
+        this.thirteenDigitISBNNumberOfTheBook = thirteenDigitISBNNumberOfTheBook;
+    }
 }
