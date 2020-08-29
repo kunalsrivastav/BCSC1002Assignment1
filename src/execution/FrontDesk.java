@@ -54,6 +54,17 @@ public class FrontDesk {
                     System.out.println("Thank you for Issuing the Books..");
                     break;
                 case RETURN_A_PREVIOUSLY_ISSUED_BOOK:
+                    if (student.getNumberOfBooksIssuedByTheStudent() == 0) {
+                        System.out.println("Sorry, you haven't issued any book yet so you can't return book.");
+                    }
+                    else {
+                        System.out.println("Enter the name of the book you want to return: ");
+                        scanner.nextLine();
+                        bookName = scanner.nextLine();
+                        if (student.returnBook(bookName)) {
+                            System.out.println("Thank you for returning the book " + bookName + ".");
+                        }
+                    }
                     break;
                 case SHOW_ALL_ISSUED_BOOKS:
                     break;
