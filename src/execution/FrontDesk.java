@@ -18,5 +18,8 @@ public class FrontDesk {
         Student student = new Student();
         Library library = new Library();
         library.setBooksInLibrary();
+        do {
+
+        } while (false);
     }
 }
