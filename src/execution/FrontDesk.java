@@ -67,6 +67,7 @@ public class FrontDesk {
                     }
                     break;
                 case SHOW_ALL_ISSUED_BOOKS:
+                    student.showIssuedBooksByStudent();
                     break;
                 case EXIT:
                     break;
