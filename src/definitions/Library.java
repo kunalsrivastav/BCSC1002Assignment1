@@ -8,9 +8,12 @@ package definitions;
 
 public class Library {
     private Book[] booksThatAreCurrentlyAvailable;
+    private static final int MAXIMUM_BOOKS_IN_LIBRARY = 5;
 
     // Parameterized Constructor
     public Library(Book[] booksThatAreCurrentlyAvailable) {
         this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
     }
+
+
 }
