@@ -50,4 +50,25 @@ public class Library {
     public int hashCode() {
         return Arrays.hashCode(getBooksThatAreCurrentlyAvailable());
     }
+
+    /**
+     * This method will set the Information of books available in Library.
+     * */
+    public void setBooksInLibrary() {
+        booksThatAreCurrentlyAvailable[0].setNameOfTheBook("Engineering Mathematics");
+        booksThatAreCurrentlyAvailable[0].setNameOfTheAuthorOfTheBook("H. K. Das");
+        booksThatAreCurrentlyAvailable[0].setThirteenDigitISBNNumberOfTheBook("9352836537000");
+        booksThatAreCurrentlyAvailable[1].setNameOfTheBook("Digital Electronics");
+        booksThatAreCurrentlyAvailable[1].setNameOfTheAuthorOfTheBook("M. Mano");
+        booksThatAreCurrentlyAvailable[1].setThirteenDigitISBNNumberOfTheBook("9353062012000");
+        booksThatAreCurrentlyAvailable[2].setNameOfTheBook("Database Management System");
+        booksThatAreCurrentlyAvailable[2].setNameOfTheAuthorOfTheBook("Navathe");
+        booksThatAreCurrentlyAvailable[2].setThirteenDigitISBNNumberOfTheBook("9789332582705");
+        booksThatAreCurrentlyAvailable[3].setNameOfTheBook("Fundamental of Software Engineering");
+        booksThatAreCurrentlyAvailable[3].setNameOfTheAuthorOfTheBook("Rajib Mall");
+        booksThatAreCurrentlyAvailable[3].setThirteenDigitISBNNumberOfTheBook("9789388028028");
+        booksThatAreCurrentlyAvailable[4].setNameOfTheBook("Core JAVA");
+        booksThatAreCurrentlyAvailable[4].setNameOfTheAuthorOfTheBook("Dr. R. Nageswara Rao");
+        booksThatAreCurrentlyAvailable[4].setThirteenDigitISBNNumberOfTheBook("9351199258111");
+    }
 }
