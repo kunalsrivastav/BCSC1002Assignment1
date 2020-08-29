@@ -6,6 +6,8 @@
  * */
 package definitions;
 
+import java.util.Arrays;
+
 public class Library {
     private Book[] booksThatAreCurrentlyAvailable;
     private static final int MAXIMUM_BOOKS_IN_LIBRARY = 5;
@@ -21,5 +23,13 @@ public class Library {
         for (int libraryIndex = 0; libraryIndex < MAXIMUM_BOOKS_IN_LIBRARY; libraryIndex++) {
             this.booksThatAreCurrentlyAvailable[libraryIndex] = new Book();
         }
+    }
+
+    public Book[] getBooksThatAreCurrentlyAvailable() {
+        return booksThatAreCurrentlyAvailable;
+    }
+
+    public void setBooksThatAreCurrentlyAvailable(Book[] booksThatAreCurrentlyAvailable) {
+        this.booksThatAreCurrentlyAvailable = booksThatAreCurrentlyAvailable;
     }
 }
