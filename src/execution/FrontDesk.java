@@ -6,6 +6,7 @@
  * */
 package execution;
 
+import definitions.Library;
 import definitions.Student;
 
 import java.util.Scanner;
@@ -15,5 +16,6 @@ public class FrontDesk {
         Scanner scanner = new Scanner(System.in);
         int studentChoice;
         Student student = new Student();
+        Library library = new Library();
     }
 }
